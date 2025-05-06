@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earn Cash</title>
+</head>
+<body>
+  <h1>Earn Cash</h1>
+  <label for="upi">Enter UPI ID:</label><br>
+  <input type="text" id="upi" required><br><br>
+  <button onclick="redirectToLink()">Submit</button>
+
+  <script>
+    function redirectToLink() {
+      const upi = document.getElementById("upi").value.trim();
+      if (upi) {
+        const yourLink = "https://bigcash.live/?i=134683333";
+        const finalLink = yourLink + "?upi=" + encodeURIComponent(upi);
+        window.location.href = finalLink;
+      } else {
+        alert("Please enter a UPI ID.");
+      }
+    }
+  </script>
+</body>
+</html>
