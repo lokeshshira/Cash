@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Earn Cash</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Earn Cashback</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Earn Cash</h1>
-  <label for="upi">Enter UPI ID:</label><br>
-  <input type="text" id="upi" required><br><br>
-  <button onclick="redirectToLink()">Submit</button>
-
-  <script>
-    function redirectToLink() {
-      const upi = document.getElementById("upi").value.trim();
-      if (upi) {
-        const yourLink = "https://bigcash.live/?i=134683333";
-        const finalLink = yourLink + "?upi=" + encodeURIComponent(upi);
-        window.location.href = finalLink;
-      } else {
-        alert("Please enter a UPI ID.");
-      }
-    }
-  </script>
+    <div class="container">
+        <img src="gdxhack.jpg" class="top-image" alt="GDXHack Logo">
+        <p class="headline">Complete Task Get Instant Cashback</p>
+        <div class="form-box">
+            <h2>daily earn cash back</h2>
+            <form action="submit.php" method="POST">
+                <input type="text" name="upi" placeholder="Enter UPI Id" required>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <ul class="steps">
+            <li>Install App</li>
+            <li>Register & verify OTP</li>
+            <li>Done You Will Get Cashback</li>
+        </ul>
+        <p class="footer">Complete Task Get ₹5 Instant</p>
+    </div>
 </body>
 </html>
